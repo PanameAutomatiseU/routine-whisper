@@ -14,7 +14,63 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      routines: {
+        Row: {
+          created_at: string | null
+          date: string
+          deep_sleep_min: number | null
+          focus_areas: string[] | null
+          focus_desc: string | null
+          happiness: string | null
+          id: string
+          rem_sleep_min: number | null
+          score_sleep: number | null
+          sleep_hours: number | null
+          toltec_assume: boolean | null
+          toltec_best: boolean | null
+          toltec_personal: boolean | null
+          toltec_word: boolean | null
+          updated_at: string | null
+          user_id: string
+        }
+        Insert: {
+          created_at?: string | null
+          date: string
+          deep_sleep_min?: number | null
+          focus_areas?: string[] | null
+          focus_desc?: string | null
+          happiness?: string | null
+          id?: string
+          rem_sleep_min?: number | null
+          score_sleep?: number | null
+          sleep_hours?: number | null
+          toltec_assume?: boolean | null
+          toltec_best?: boolean | null
+          toltec_personal?: boolean | null
+          toltec_word?: boolean | null
+          updated_at?: string | null
+          user_id: string
+        }
+        Update: {
+          created_at?: string | null
+          date?: string
+          deep_sleep_min?: number | null
+          focus_areas?: string[] | null
+          focus_desc?: string | null
+          happiness?: string | null
+          id?: string
+          rem_sleep_min?: number | null
+          score_sleep?: number | null
+          sleep_hours?: number | null
+          toltec_assume?: boolean | null
+          toltec_best?: boolean | null
+          toltec_personal?: boolean | null
+          toltec_word?: boolean | null
+          updated_at?: string | null
+          user_id?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
